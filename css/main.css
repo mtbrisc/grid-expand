@@ -1,0 +1,145 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+  transition: opacity 300ms ease-in-out;
+}
+
+body {
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent;
+  /*   position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); */
+  display: block;
+  overflow-y: auto;
+}
+
+.tile {
+  content: "";
+  display: block;
+  line-height: 100%;
+  width: 33.33%;
+  height: 33.33%;
+  float: left;
+  line-height: 100vh;
+  padding: 0;
+  z-index: 0;
+  text-align: center;
+  transition: all 100ms ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  background: #323232;
+  border: 1px solid #fff;
+  color: #fff;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  outline: none;
+}
+
+.tile h1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: clip ellipsis;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .8);
+  transition: opacity 300ms ease-in-out;
+}
+
+.tile:hover {
+  opacity: .9
+}
+
+.tile:hover h1 {
+  opacity: .8
+}
+
+.full,
+.full:hover {
+  background: #fff!important;
+  color: #323232;
+  border: none;
+  line-height: 2em!important;
+  text-align: left;
+  padding: 1em;
+  overflow-y: auto;
+  transition: all 500ms ease-in-out, line-height 100ms ease-in-out;
+  opacity: 1;
+  position: absolute;
+}
+
+.full h1 {
+  opacity: 1;
+  color: #323232;
+  background: transparent;
+}
+
+.heading {
+  background: #666;
+  display: block;
+  width: auto;
+  height: 61.8vh;
+  margin-left: -1em;
+  margin-top: -1em;
+  margin-right: -1em;
+  margin-bottom: 1em;
+  background-size: cover!important;
+  background-position: center!important;
+  background-attachment: fixed!important;
+}
+
+.tile:nth-child(1){
+  background: #323232;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/6/61/Aurora-SpaceShuttle-EO.jpg'); */
+}
+.tile:nth-child(2){
+  background: #323232;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/International_Space_Station_star_trails_-_JSC2012E052684.jpg/1024px-International_Space_Station_star_trails_-_JSC2012E052684.jpg'); */
+}
+.tile:nth-child(3){
+  background: #323232;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/1280px-Messier51_sRGB.jpg'); */
+}
+.tile:nth-child(4){
+  background: #484848;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Starburst_in_NGC_4449_(captured_by_the_Hubble_Space_Telescope).jpg/800px-Starburst_in_NGC_4449_(captured_by_the_Hubble_Space_Telescope).jpg'); */
+}
+.tile:nth-child(5){
+  background: #666666;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg'); */
+}
+.tile:nth-child(6){
+  background: #888888;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/0/05/Waves_on_Ocean_Coast.jpg'); */
+}
+.tile:nth-child(7){
+  background: #aaaaaa;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/3/36/Mount_Yu_Shan_-_Taiwan.jpg'); */
+}
+.tile:nth-child(8){
+  background: #cccccc;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/3/38/4-Nature-Wallpapers-2014-1_ukaavUI.jpg'); */
+}
+.tile:nth-child(9){
+  background: #ddd;
+  /* background-image: url('//upload.wikimedia.org/wikipedia/commons/c/c2/Grand_star-forming_region_R136_in_NGC_2070_(visible_and_ultraviolet,_captured_by_the_Hubble_Space_Telescope).jpg'); */
+}
